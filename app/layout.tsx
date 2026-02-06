@@ -31,7 +31,7 @@ export default function RootLayout({
         >
           <div className="flex min-h-screen bg-background">
             <Sidebar />
-            {children}
+            <div className="ml-64 flex-1">{children}</div>
           </div>
         </ThemeProvider>
       </body>
