@@ -1,6 +1,6 @@
 # **💰 FinDash - Financial Dashboard**
 
-Modern financial dashboard built with Next.js 15, React 19, TypeScript, and Tailwind CSS 4.
+Modern financial dashboard built with Next.js 16, React 19, TypeScript, and Tailwind CSS 4.
 
 ## **✨ Features**
 
