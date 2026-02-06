@@ -55,6 +55,11 @@ app/
 ├── /wallets         # Wallet management
 ├── /settings        # User settings
 └── /help            # Help center
+components/
+├── dashboard                  # Dashboard components
+├── ui     # Application ui components
+├── lib        # Investment tracking
+
 ```
 
 ## **🔧 Development**
