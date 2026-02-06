@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
-import { ThemeProvider } from "./components/ThemeProvider";
+import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
+import { Sidebar } from "@/components/dashboard/Sidebar";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -28,7 +29,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <div className="flex min-h-screen bg-background">
+            <Sidebar />
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>

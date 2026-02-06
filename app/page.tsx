@@ -1,7 +1,5 @@
+import { Sidebar } from "@/components/dashboard/Sidebar";
+
 export default function Home() {
-  return (
-    <div className="flex min-h-screen bg-background">
-      Hello fintech dashboard
-    </div>
-  );
+  return <main className="flex-1 ml-64">Dashboard content</main>;
 }
