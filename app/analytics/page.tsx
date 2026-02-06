@@ -46,7 +46,7 @@ export default function AnalyticsPage() {
 
   return (
     <div className="flex min-h-screen bg-background">
-      <main className="w-full">
+      <main className="flex-1">
         <div className="p-6">
           <div className="mb-6">
             <h2 className="text-2xl font-bold text-foreground">Analytics</h2>

@@ -66,7 +66,7 @@ export default function CardsPage() {
 
   return (
     <div className="flex min-h-screen bg-background">
-      <main className="w-full">
+      <main className="flex-1">
         <div className="p-6">
           <div className="flex items-center justify-between mb-6">
             <div>
