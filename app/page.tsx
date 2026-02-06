@@ -1,4 +1,5 @@
 import { BalanceChart } from "@/components/dashboard/BalanceChart";
+import { IncomeExpenseChart } from "@/components/dashboard/IncomeExpenseChart";
 import { MetricCard } from "@/components/dashboard/MetricsCard";
 import { PortfolioChart } from "@/components/dashboard/PortfolioChart";
 import { DashboardHeader, Sidebar } from "@/components/dashboard/Sidebar";
@@ -21,6 +22,11 @@ export default function Home() {
         <div className="grid gap-4 lg:grid-cols-3 mb-6">
           <BalanceChart />
           <PortfolioChart />
+        </div>
+
+        {/* Second Charts Row */}
+        <div className="grid gap-4 md:grid-cols-2 mb-6">
+          <IncomeExpenseChart />
         </div>
       </div>
     </main>
