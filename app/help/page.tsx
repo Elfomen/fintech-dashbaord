@@ -88,7 +88,6 @@ export default function HelpPage() {
             </p>
           </div>
 
-          {/* Search */}
           <Card className="mb-6">
             <CardContent className="p-6">
               <div className="relative">
