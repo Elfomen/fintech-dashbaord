@@ -2,7 +2,9 @@ import { BalanceChart } from "@/components/dashboard/BalanceChart";
 import { IncomeExpenseChart } from "@/components/dashboard/IncomeExpenseChart";
 import { MetricCard } from "@/components/dashboard/MetricsCard";
 import { PortfolioChart } from "@/components/dashboard/PortfolioChart";
-import { DashboardHeader, Sidebar } from "@/components/dashboard/Sidebar";
+import { MarketWidget } from "@/components/dashboard/RealTimeWidgets/MarketWidget";
+import { QuickStatsWidget } from "@/components/dashboard/RealTimeWidgets/QuickStatsWidget";
+import { DashboardHeader } from "@/components/dashboard/Sidebar";
 import { SpendingChart } from "@/components/dashboard/SpendingChart";
 import { TransactionsTable } from "@/components/dashboard/TransactionsTable";
 import { dashboardMetrics } from "@/lib/finance-data";
@@ -36,6 +38,10 @@ export default function Home() {
         <div className="grid gap-4 lg:grid-cols-3 mb-6">
           <div className="lg:col-span-2">
             <TransactionsTable limit={5} showFilters={false} />
+          </div>
+          <div className="space-y-4">
+            <QuickStatsWidget />
+            <MarketWidget />
           </div>
         </div>
       </div>
