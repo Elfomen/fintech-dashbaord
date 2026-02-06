@@ -3,6 +3,7 @@ import { IncomeExpenseChart } from "@/components/dashboard/IncomeExpenseChart";
 import { MetricCard } from "@/components/dashboard/MetricsCard";
 import { PortfolioChart } from "@/components/dashboard/PortfolioChart";
 import { DashboardHeader, Sidebar } from "@/components/dashboard/Sidebar";
+import { SpendingChart } from "@/components/dashboard/SpendingChart";
 import { dashboardMetrics } from "@/lib/finance-data";
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
         {/* Second Charts Row */}
         <div className="grid gap-4 md:grid-cols-2 mb-6">
           <IncomeExpenseChart />
+          <SpendingChart />
         </div>
       </div>
     </main>
