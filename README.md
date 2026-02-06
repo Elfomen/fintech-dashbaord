@@ -58,7 +58,7 @@ app/
 components/
 ├── dashboard                  # Dashboard components
 ├── ui     # Application ui components
-├── lib        # Investment tracking
+├── lib        # Application utils files
 
 ```
 
