@@ -6,7 +6,6 @@ import { MarketWidget } from "@/components/dashboard/RealTimeWidgets/MarketWidge
 import { QuickStatsWidget } from "@/components/dashboard/RealTimeWidgets/QuickStatsWidget";
 import { RecentActivityWidget } from "@/components/dashboard/RealTimeWidgets/RecentActivityWidget";
 import { UpcomingBillsWidget } from "@/components/dashboard/RealTimeWidgets/UpcomingBillsWidget";
-import { DashboardHeader } from "@/components/dashboard/Sidebar";
 import { SpendingChart } from "@/components/dashboard/SpendingChart";
 import { TransactionsTable } from "@/components/dashboard/TransactionsTable";
 import { dashboardMetrics } from "@/lib/finance-data";
@@ -14,8 +13,6 @@ import { dashboardMetrics } from "@/lib/finance-data";
 export default function Home() {
   return (
     <main>
-      <DashboardHeader />
-
       <div className="p-6">
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 mb-6">
           {dashboardMetrics.map((metric) => (

@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import "./globals.css";
-import { Sidebar } from "@/components/dashboard/Sidebar";
+import { DashboardHeader, Sidebar } from "@/components/dashboard/Sidebar";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -31,7 +31,10 @@ export default function RootLayout({
         >
           <div className="flex min-h-screen bg-background">
             <Sidebar />
-            <div className="ml-64 flex-1">{children}</div>
+            <div className="ml-64 flex-1">
+              <DashboardHeader />
+              {children}
+            </div>
           </div>
         </ThemeProvider>
       </body>
